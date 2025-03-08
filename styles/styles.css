@@ -19,14 +19,12 @@ html, body {
 .daniebe {
     width: 17%;
     padding: 1% 0 0 10%;
-    float: left;
 }
 
 h1 {
     color: #FAF0CA;
     font-size: clamp(1.8rem, 2.5vw, 3rem); 
     padding: 5% 0 0 10%;
-    text-align: left;
 }
 
 .text {
@@ -145,6 +143,12 @@ footer {
     potition: absolute;
     bottom: 0;
     width: 100%;
+}
+
+th {
+    color: #FAF0CA;
+    font-size: clamp(1.5rem, 2vw, 2.5rem); 
+    padding: 5%;
 }
 
 footer img {
