@@ -54,9 +54,15 @@ h1 {
 }
 
 
-.izquierda, .derecha {
+.izquierda {
     padding: 2vw 8vw;
-    text-align: justify;
+    text-align: left;
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+}
+
+ .derecha {
+    padding: 2vw 8vw;
+    text-align: rigth;
     font-size: clamp(1rem, 1.1vw, 1.2rem);
 }
 
