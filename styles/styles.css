@@ -146,8 +146,21 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-
+footer table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+footer td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img {
+    width: 35px;  
+    height: auto;
+}
 @media (max-width: 768px) {
     .daniebe {
         width: 20%; 
@@ -191,5 +204,8 @@ footer {
         flex-direction: column;
         text-align: center;
         padding: 4vw;
+    }
+        footer img {
+        width: 50px;  
     }
 }
