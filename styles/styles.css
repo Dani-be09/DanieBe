@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('../fuentes/bahnschrift.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Bahnschrift', sans-serif;
+    background-color: #242422;
+    color: #FAF0CA;
+    text-align: center;
+}
+
+.daniebe {
+    width: 17%;
+    padding: 1% 0 0 10%;
+    float: left;
+}
+
+h1 {
+    color: #FAF0CA;
+    font-size: clamp(1.8rem, 2.5vw, 3rem); 
+    padding: 5% 0 0 10%;
+    text-align: left;
+}
+
+.text {
+    color: #EB4511;
+    font-weight: bold;
+    font-size: clamp(4rem, 5vw, 6rem);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.content2 {
+    margin-top: 4vw;
+}
+
+.content1 {
+    margin-bottom: 4vw;
+}
+
+
+.izquierda, .derecha {
+    padding: 2vw 8vw;
+    text-align: justify;
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+}
+
+
+nav {
+    background-color: #EB4511;
+    padding: 1.5vw;
+    text-align: right;
+}
+
+nav a {
+    margin: 0 2vw;
+    text-decoration: none;
+    color: #FAF0CA;
+    font-weight: bold;
+    font-size: clamp(0.2rem, 0.8vw, 1rem);
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #242422;
+}
+
+
+a {
+    color: #EB4511;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(1.2rem, 1.5vw, 1.9rem);
+}
+
+a:hover {
+    color: #8FB2C8;
+}
+
+
+section {
+    padding: 5vw;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 3vw;
+    max-width: 90%;
+    margin: auto;
+    padding: 2vw;
+}
+
+.project-category {
+    background-color: #3C3C3B;
+    padding: 2vw;
+    border-radius: 1vw;
+    box-shadow: 0.5vw 0.5vw 2vw rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    line-height: 100%;
+}
+
+.project-category:hover {
+    transform: translateY(-1vw);
+}
+
+img[src$=".svg"] {
+    height: 20%;
+    margin: 5%;
+    padding: 2%;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5)); /* Sombra adaptada a la forma de la imagen */
+    border-radius: 5px; /* Opcional para esquinas más suaves */
+}
+
+footer {
+    background-color: #8FB2C8;
+    padding: 1.5vw;
+    box-shadow: 0.5vw 0.5vw 2vw rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh; /* Más angosto */
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .daniebe {
+        width: 20%; 
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 5vw;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 7vw;
+    }
+
+    .izquierda, .derecha {
+        padding: 6vw;
+        font-size: 1.2rem;
+    }
+
+    nav {
+        padding: 3vw;
+    }
+
+    nav a {
+        font-size: 1rem;
+        display: block; 
+        padding: 2vw;
+    }
+
+    .projects {
+        grid-template-columns: 1fr; 
+    }
+
+    .project-category {
+        padding: 5vw;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 4vw;
+    }
+}
