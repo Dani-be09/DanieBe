@@ -146,17 +146,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
-footer table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-}
-footer td {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 footer img {
     width: 35px;  
     height: auto;
@@ -184,12 +174,13 @@ footer img {
 
     nav {
         padding: 3vw;
+        text-align: center; 
     }
 
     nav a {
         font-size: 1rem;
-        display: block; 
         padding: 2vw;
+        display: inline-block; 
     }
 
     .projects {
